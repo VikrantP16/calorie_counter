@@ -15,4 +15,6 @@ function cleanInputString(str) {
     //     cleanStrArray.push(strArray[i])
     //   }
     // } -- Inefficient for memory and runtime performance
+    const regex = /[+-\s]/g;
+    return str.replace(regex, "");
 }
